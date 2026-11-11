@@ -1,0 +1,72 @@
+body {
+    margin: 20px;
+    /*
+     Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #CDB4DB;
+    color: #F20089;
+    border: 3px solid #DB00B6;
+    text-shadow: #d8cefe;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: inset;
+    
+    /* 1. Added a base outer shadow and a smooth transition */
+    box-shadow: 0 4px 10px rgba(219, 0, 182, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* 2. Added the continuous floating animation */
+    animation: floatCard 4s ease-in-out infinite;
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+/* 3. Added Hover Effect (Lifts the card and strengthens the shadow) */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(219, 0, 182, 0.6);
+}
+
+/* 4. Added Animation Keyframes (Gentle floating motion) */
+@keyframes floatCard {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
